@@ -1,0 +1,23 @@
+// Base on this technique: https://css-tricks.com/approaches-media-queries-sass/#article-header-id-3
+
+$min-desktop-width: 1200px;
+$max-phone-width: 768px;
+
+@mixin desktop {
+  @media (min-width: #{$min-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$max-phone-width + 1px}) and (max-width: #{$min-desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$max-phone-width}) {
+    @content;
+  }
+}
+
