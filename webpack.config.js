@@ -6,6 +6,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: './sass/main.scss',
+  output: {
+    publicPath: '/'
+  },
   module: {
       rules: [{
           test: /\.scss$/,

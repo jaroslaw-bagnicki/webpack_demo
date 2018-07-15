@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Jarosław Bagnicki <jarek@bagnicki.net>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack"
+  },
   "private": true,
   "devDependencies": {
     "css-loader": "^1.0.0",
